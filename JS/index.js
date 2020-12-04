@@ -1,11 +1,11 @@
-const Plane = require('./Planes/Plane');
-const MilitaryPlane = require('./Planes/MilitaryPlane');
-const PassengerPlane = require('./Planes/PassengerPlane');
-const Airport = require('./Airport');
-const MilitaryType = require('./models/MilitaryType');
+const plane = require('./Planes/Plane');
+const militaryPlane = require('./Planes/MilitaryPlane');
+const passengerPlane = require('./Planes/PassengerPlane');
+const airport = require('./Airport');
+const militaryType = require('./models/MilitaryType');
 const experimentalPlane = require('./Planes/experimentalPlane');
-const ExperimentalTypes = require('./models/ExperimentalTypes');
-const ClassificationLevel = require('./models/ClassificationLevel');
+const experimentalTypes = require('./models/ExperimentalTypes');
+const classificationLevel = require('./models/ClassificationLevel');
 
 (function run() {
 

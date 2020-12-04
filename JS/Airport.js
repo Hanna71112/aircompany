@@ -1,11 +1,11 @@
-const PassengerPlane = require('./Planes/PassengerPlane');
-const MilitaryPlane = require('./Planes/MilitaryPlane');
-const MilitaryType = require('./models/militaryType');
+const passengerPlane = require('./Planes/PassengerPlane');
+const militaryPlane = require('./Planes/MilitaryPlane');
+const militaryType = require('./models/militaryType');
 const experimentalPlane = require('./Planes/experimentalPlane');
 
 class Airport {
 
-     getPasPl() {
+     getPasssengerPlane() {
         let pl = this.planes;
         var x = [];
         for (let p of this.planes) {
@@ -17,18 +17,17 @@ class Airport {
     getMilitaryPlanes() {
         let militaryPlanes = [];
         this.planes.forEach(plane => {
-            if (plane instanceof MilitaryPlane) {//if
+            if (plane instanceof MilitaryPlane) {
                 militaryPlanes.push(plane);
             }
-            //else
-            else{}
+                      else{}
         });
-//return
+
         return militaryPlanes;
     }
 
     getPassengerPlaneWithMaxPassengersCapacity() {
-        let passengerPlanes = this.getPasPl();
+        let passengerPlanes = this.getPassengerPlane();
         let planeWithMaxCapacity = passengerPlanes[0];
         for (let i = 0; i < passengerPlanes.length; i++) {
             if (passengerPlanes[i].getPassengersCapacity() >     planeWithMaxCapacity.getPassengersCapacity()) {

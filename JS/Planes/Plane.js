@@ -15,7 +15,7 @@ class Plane {
         return this.maxSpeed;
     }
 
-    Get_Max_Flight_Distance() {
+    GetMaxFlightDistance() {
         return this.maxFlightDistance;
     }
 

@@ -1,4 +1,4 @@
-const ClassificationLevel  = {
+const classificationLevel  = {
     UNCLASSIFIED: 'Unclassified',
     CONFIDENTIAL: 'Confidential',
     SECRET: 'Secret',
